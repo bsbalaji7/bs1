@@ -1,0 +1,58 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8M7Oay81b9hc",
+        "outputId": "c3943cad-18b5-4947-9b9a-82c9bfca16b1"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Generated Password: JU`e>fEWS`#9\n"
+          ]
+        }
+      ],
+      "source": [
+        "import random\n",
+        "import string\n",
+        "\n",
+        "def generate_password(length=12):\n",
+        "    characters = string.ascii_letters + string.digits + string.punctuation\n",
+        "    password = ''.join(random.choice(characters) for _ in range(length))\n",
+        "    return password\n",
+        "\n",
+        "# Example: Generate a password with default length (12 characters)\n",
+        "password = generate_password()\n",
+        "print(\"Generated Password:\", password)\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "yEXSZQaQjkJW"
+      }
+    }
+  ]
+}
